@@ -1,0 +1,56 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+.title{
+    text-align: center;
+    color: #333;
+}
+.todo-container{
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.todo-item{
+   background: white;
+   padding: 15px;
+   margin-bottom: 12px;
+   border-radius: 8px;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   border-left: 6px solid #4e8c;
+}
+.todo-item.completed{
+    border-left: 6px solid #2b4f3a;
+    opacity: 0.8;
+}
+.todo-title{
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+.todo-status{
+    margin-bottom: 10px;
+}
+button{
+    padding: 7px 12px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.delete-btn{
+    background: #e74c3c;
+    color: white;
+}
+.toggle-btn{
+    background: #3498db;
+    color: white;
+}
+.empty-message{
+    text-align: center;
+    font-size: 20px;
+    color: #777;
+    margin-top: 40px;
+}
