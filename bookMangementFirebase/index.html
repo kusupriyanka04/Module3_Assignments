@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Book App</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+    <h1>Book Management App</h1>
+    <div class="sidebar">
+        <h2>Add Book</h2>
+        <input id="title" placeholder="Enter Title">
+        <input id="author" placeholder="Author">
+        <input id="price" placeholder="Price" type="number">
+        <input id="image" placeholder="Image URL">
+
+        <button class="btn" onclick="addBook()">Add Book</button>
+    </div>
+
+    <!-- Book Cards -->
+     <div class="books-area">
+        <h2>Book Collection</h2>
+        <div id="booksList" class="books-grid"></div>
+     </div>
+     </div>
+
+    <div class="modal" id="detailsModal">
+    <div class="modal-content">
+     <h2 id="modalTitle"></h2>
+     <p><b>Author:</b> <span id="modalAuthor"></span></p>
+     <p><b>Price:</b> <span id="modalPrice"></span></p>
+     <img id="modalImage" style="width:100%; border-radius:8px; margin-top:10px;">
+     <button class="btn" style="margin-top:10px;" onclick="closeModal()">Close</button>
+   </div>
+   </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
